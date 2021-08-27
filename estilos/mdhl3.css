@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  width: 100%;
+}
+
+/*-----------------------------HEADER-------------------------*/
+ 
+.header {
+  width: 100%;
+  height: 20vh;
+  background: rgb(7,38,98);
+  background: linear-gradient(90deg, rgba(7,38,98,1) 0%, rgba(0,0,0,1) 100%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.titulo {
+  width: 100%;
+  text-align: right;
+  font-size: 40px;
+  padding-top: 1rem;
+  margin-right: 2rem;
+  color: #2f4f4f;
+  text-shadow: 4px 4px 2px #333;
+  letter-spacing: .5rem;
+}
+.nav {
+  width: 100%;
+}
+.nav > a {
+  display: inline-block;
+  margin: 0 2rem;
+  width: 6rem;
+  height: 2rem;
+  background-color: #2f4f4f;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 0.3rem;
+  color: #fff;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.nav > a:hover {
+  background-color: #0f2f2f;
+  height: 3rem;
+  padding-top: 1rem;
+  
+}
+.nav .btn {
+  text-decoration: underline #FFE4C4;
+  border: 1px solid #FFE4C4;
+}
+
+.conteiner-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(7,38,98);
+  background: linear-gradient(90deg, rgba(7,38,98,1) 0%, rgba(0,0,0,1) 100%);
+}
+.conteiner-img > .img-header {
+  flex-basis: 99%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  
+}
+.subtitulo-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    background: rgb(7,38,98);
+    background: linear-gradient(180deg, rgba(7,38,98,1) 0%, rgba(0,0,0,1) 100%);
+
+}
+.subtitulo {
+  width: 60%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.logo{
+    width: 140px;
+    height: 125px;
+    object-fit: cover;
+    box-shadow: 13px 0px 7px 0px rgba(0,0,0,0.5);
+    border-left: 1px solid #0f2f2f;
+    border-bottom: 1px solid #0f2f2f;
+
+}
+
+
+/**********************MAIN******************************/
+
+.container-article {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container-article > article {
+  padding: 2rem 6rem;
+  display: inline-block;
+  border: 2px solid #999;
+  border-top-left-radius: .8rem;
+  border-bottom-right-radius: .8rem;
+  margin-top: 2rem;
+  background-color: #0f2f2f;
+  color: #fff;
+}
+.container-article > article:nth-child(2){
+  border-radius: 0 .8rem 0 .8rem;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about > article {
+  width: 100%;
+  padding: 1rem 4rem;
+  margin: 1rem 0.5rem;
+  display: inline-block;
+  border: 2px solid #999;
+  border-radius: 0.5rem;
+  background-color: #0f2f2f;
+  color: #fff;
+}
+.about h3{
+  margin: 0;
+  margin-bottom: 1rem;
+  letter-spacing: .7rem;
+}
+.conteiner-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #0f2f2f;
+  color: #fff;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 40%;
+  border-radius: 1rem;
+}
+.contacto > a {
+  color: #b0c4de;
+}
+
+.conteiner-list{
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  background-color:#0f2f2f ;
+  padding: 2rem;
+  
+  border-radius: .5rem;
+}
+.conteiner-list>p, h3{
+  margin: 1rem ;
+}
+.conteiner-list dt{
+  text-align: left;
+  padding: 1.5rem 0;
+  font-size: 22px;
+  
+}
+.conteiner-list dd, li{
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+.sangria{
+  margin-left: 3rem;
+}
+.all-play,.li {
+  padding: 0;
+}
+.last-li{
+  margin-left: 3rem;
+}
+.conteiner-list h3{
+  font-size: 28px;
+  letter-spacing: .2rem;
+}
+
+.ul{
+  list-style-type: lower-alpha;
+}
+.ul2{
+  list-style-type: circle;
+}
+main{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 33%, rgba(136,136,136,1) 66%, rgba(170,170,170,1) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/****************************Game info************************/
+
+table{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  border: 3px solid #0f2f2f;
+  padding: 1rem;
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.h3-game{
+  margin: 0;
+  padding: 1rem;
+  font-size: 28px;
+}
+.main-game p{
+  margin: 1rem 0;
+  text-align: left;
+}
+th, td {
+  padding: 1rem;
+}
+th:nth-child(1){
+  width: 8rem;
+}
+.td-fecha{
+  padding: 1rem 0;
+  height: 100px;
+}
+.parrafo-tabla{
+  text-align: left;
+  padding-left: 5rem;
+  text-decoration: underline;
+}
+.parrafo-tabla1{
+  text-align: left;
+  padding-left: 5rem;
+  font-size: 21px;
+}
+.negrita{
+  font-weight: bolder;
+  color: #0f2f2f;
+  font-size: 18px;
+}
+.conteiner-pgame{
+  text-align: left;
+  padding-left: 5rem;
+  color: #000;
+}
+.p-inline{
+  display: inline-block;
+  width: 49%;
+}
+.table-form{
+  color: #000;
+}
+td{
+  height: 100px;
+}
+
+/*************************FORM******************************/
+
+.conteiner-form{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding: 0;
+  
+}
+form{
+  color: #fff;
+}
+form>fieldset{
+  margin: 1rem 0;
+  border: none;
+}
+
+.conteiner-form>h2{
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-right: 10rem;
+}
+.input-name, .input-city, .input-date,.input-female,.input-grade{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+} 
+.input-name>div,.input-city>div,.input-date>div {
+  width: 50%;
+}
+.input-female p, .input-grade p{
+  padding-right: 1rem;
+}
+.input-female label{
+  padding:  0 .5rem;
+}
+.input-grade label{
+  margin-right:1rem;
+}
+.conteiner-inputLoc-h3{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.conteiner-inputLoc-h3>p{
+  padding: .5rem 0;
+}
+form h3{
+  margin: 1rem 0;
+}
+#school{ 
+  width: 70%;
+  height: 10rem;
+  background-color: inherit;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: .4rem 0;
+}
+#school option{
+  font-size: 20px;
+  margin-left: 2rem;
+  text-align: justify;
+}
+.fa-school:before {
+  margin-right: 1rem;
+}
+.input-position{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.input-position>div{
+  width: 50%;
+}
+.input-uniform{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.input-uniform>div{
+  width: 50%;
+}
+.parrafo-form{
+  color: #0f2f2f;
+}
+form button{
+  width: 8rem;
+  height: 3rem;
+  background-color: #0f2f2f;
+  color: #fff;
+  text-align: center;
+  border-radius: 20%;
+  font-size: 20px;
+}
+label{
+  display: inline-block;
+  width: 200px;
+}
+.input-grade label, .input-female label{
+  width: auto;
+}
+input[type="text"]{
+  padding-top: 0.5rem;
+  padding-left: .5rem;
+  width: auto;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: inherit;
+  color: #fff;
+}
+
+.input-street input{
+  width: 63%;
+}
+
+input[type="date"]{
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: inherit;
+  color: #fff;
+  width: 26%;
+  font-size: 20px;
+}
+.colorParent{
+  color: #0f2f2f;
+}
+#input, label[for="input"]{
+  display: none;
+}
+
+/*******************MEDIA************************/
+@media only screen and (max-width: 1200px){
+  .titulo{
+    font-size: 30px;
+    text-align: center;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav>a{
+    margin: 0;
+  }
+  .img-header{
+    width: 95%;
+  }
+  /******************Register****************/
+  .conteiner-form h2{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .input-name, .input-city, .input-date{
+    flex-direction: column;
+  }
+  .input-name label, .input-city label{
+    margin-top: .5rem;
+  }
+  .input-street input{
+    width: 100%;
+  }
+  .input-date div:nth-child(1){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-date div:nth-child(1) input{
+    width: 100%;
+  }
+  .input-date div:nth-child(2){
+    width: 100%;
+    margin-top: .5rem;
+  }
+  #school{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /****************Home*****************/
+  .header {
+    background: linear-gradient(180deg, rgba(7,38,98,1) 0%, rgba(0,0,0,1) 100%);
+  }
+  .titulo{
+    font-size: 25px;
+    padding: 0;
+    margin:0;
+    margin-top: .3rem;
+    text-align: center;
+  }
+  .subtitulo{
+    font-size: 25px;
+  }
+  .header{
+    height: 15vh;
+    justify-content: left;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30rem;
+    width: 50vw;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    background: linear-gradient(360deg, rgba(7,38,98,1) 0%, rgba(0,0,0,1) 100%);
+    transform: translateX(-100%);
+  }
+  .conteiner-img>img{
+    min-width: 80%;
+  }
+  .conteiner-img{
+    background: linear-gradient(360deg, rgba(7,38,98,1) 0%, rgba(0,0,0,1) 100%);
+  }
+  #input{
+    display: none;
+  }
+  label[for="input"]{
+    display: block;
+  }
+  label[for="input"] img{
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: inherit;
+    margin-left: 1rem;
+  }
+  #input:checked~.nav{
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 1.5s;
+
+  }
+ 
+  /**************Contact****************/
+  .conteiner-contacto{
+    width: 80%;
+  }
+
+  /******************Register****************/
+  .conteiner-form h2{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .input-name, .input-city, .input-date{
+    flex-direction: column;
+  }
+  .input-name label, .input-city label{
+    margin-top: .5rem;
+  }
+  .input-street input{
+    width: 100%;
+  }
+  .input-date div:nth-child(1){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-date div:nth-child(1) input{
+    width: 100%;
+  }
+  .input-date div:nth-child(2){
+    width: 100%;
+    margin-top: .5rem;
+  }
+  #school{
+    width: 100%;
+  }
+  /***************Game info*****************/
+
+  table{
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+  }
+  thead>tr{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    margin-right: 10px; */
+  }
+  thead tr th{
+    width: 60px;
+  }
+    body > main > table > thead > tr > th.september{
+      width: 80px; 
+    }
+  .conteiner-pgame{
+    padding: 0;
+    margin:0;
+    text-align: left;
+    margin-left: .2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
